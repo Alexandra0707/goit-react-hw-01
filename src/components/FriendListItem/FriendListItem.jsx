@@ -1,4 +1,4 @@
-import s from "../FriendListItem/FriendListItem.module.css";
+import s from './FriendListItem.module.css';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   const statusFriends = isOnline ? s.online : s.offline;
@@ -7,7 +7,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       <img src={avatar} alt="Avatar" width="120" />
       <p className={s.name}>{name}</p>
       <p className={`${s.status} ${statusFriends}`}>
-        {isOnline ? "online" : "offline"}
+        {isOnline ? 'online' : 'offline'}
       </p>
     </div>
   );
